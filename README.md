@@ -7,7 +7,7 @@ First, install [Yeoman](http://yeoman.io) and generator-minetest using [npm](htt
 
 ```bash
 npm install -g yo
-npm install -g generator-minetest
+npm install -g schas002/generator-minetest
 ```
 
 Then generate your new project:

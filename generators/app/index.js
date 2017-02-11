@@ -4,7 +4,7 @@ var chalk = require('chalk');
 var yosay = require('yosay');
 
 module.exports = Generator.extend({
-  prompting: function () {
+  prompting: function() {
     // Have Yeoman greet the user.
     this.log(yosay(
       'Welcome to the bedazzling ' + chalk.red('minetest mod') + ' generator!'
@@ -17,12 +17,12 @@ module.exports = Generator.extend({
       default: this.determineAppname()
     }];
 
-    return this.prompt(prompts).then(function (props) {
+    return this.prompt(prompts).then(function(props) {
       this.props = props;
     }.bind(this));
   },
 
-  writing: function () {
+  writing: function() {
     this.fs.copyTpl(
       this.templatePath('init.lua'),
       this.destinationPath('init.lua'),

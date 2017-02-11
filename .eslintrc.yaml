@@ -1,0 +1,38 @@
+extends: eslint:recommended
+# Over time, ESLint sets arbitrary rules that nobody uses.
+# We get lots of false positives.
+# This document strives to set normal rules.
+# This document is written in both YAML and human language,
+# because ESLint doesn't know it.
+env:
+    # Rule #0: Node environment only
+    # Am I running Yeoman in Node, or where?
+    node: true
+    browser: false
+    # Rule #0.1: ES6 and Mocha ***REQUIRED***
+    es6: true
+    mocha: true
+rules:
+    # Rule #1: ESLint hates linebreaks.
+    # ESLint hates us if it hates linebreaks
+    linebreak-style: off
+    # Also, git converts everything to LF anyway :shrug:
+    # * * *
+    # Rule #2: ESLint hates functions.
+    # Functions must never have spaces in `function() {`
+    space-before-function-paren:
+     - error
+     - never
+    # * * *
+    # Rule #3: ESLint hates quotes.
+    # All strings use what they want, not what ESLint wants
+    quotes: off
+    # But still, I recommend using double quotes for strings
+    # * * *
+    # Rule #4: ESLint hates trash.
+    # Without trash, the world doesn't exist
+    no-trailing-spaces: off
+    eol-last: off
+    # * * *
+    # More rules will be added as ESLint reports false positives.
+    # I said everything
