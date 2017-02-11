@@ -1,4 +1,4 @@
-# generator-minetest [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-minetest [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > A yeoman generator for minetest mods.
 
 ## Installation
@@ -27,9 +27,6 @@ yo minetest
 
 MIT © [Andrew Zyabin](https://github.com/schas002)
 
-
-[npm-image]: https://badge.fury.io/js/generator-minetest.svg
-[npm-url]: https://npmjs.org/package/generator-minetest
 [travis-image]: https://travis-ci.org/schas002/generator-minetest.svg?branch=master
 [travis-url]: https://travis-ci.org/schas002/generator-minetest
 [daviddm-image]: https://david-dm.org/schas002/generator-minetest.svg?theme=shields.io
