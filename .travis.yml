@@ -7,4 +7,4 @@ node_js:
   - '0.12'
 matrix:
   allowed_failures:
-    - node_js: "0.12"
+    - node: "0.12"
